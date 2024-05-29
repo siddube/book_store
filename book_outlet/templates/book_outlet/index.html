@@ -6,9 +6,9 @@
 {% block content %}
 <main>
 	<ul>
-		<li>
-			Book Default
-		</li>
+		{% for book in books %}
+			<li>{{ book.title }} | Rating {{ book.rating }}</li>
+		{% endfor %}
 	</ul>
 </main>
 
